@@ -12,7 +12,7 @@ public class song_exercise2 {
     String name, album, length, performer;
     int id;
     
-    public song_exercise2(int t, String a, String r, String c, String y){
+    public song_exercise3(int t, String a, String r, String c, String y){
     id = t;
     name = a;
     album = r;
@@ -24,7 +24,7 @@ public class song_exercise2 {
     System.out.println("Name: " + name);
     System.out.println("Album: " + album);
     System.out.println("Length: " + length);
-    System.out.println("Performer" + performer);
+    System.out.println("Performer: " + performer);
     System.out.println(" ");
     }
 }
