@@ -30,6 +30,7 @@ public class valorant_exercise2 {
     }
     
     public void displayAgentInfo(){
+    System.out.println("");
     System.out.println("Agent No.: " + agentnumber);
     System.out.println("Codename: " + name);
     System.out.println("Country: " + cname);
