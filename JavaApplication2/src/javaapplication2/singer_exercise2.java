@@ -11,6 +11,7 @@ package javaapplication2;
 public class singer_exercise2 {
     String name, favoriteSong;
     int NoOfPerformances;
+    static int totalPerformances;
     double earnings;
     
     public singer_exercise2 (String n, int num, double earn, String s){
@@ -35,10 +36,11 @@ public class singer_exercise2 {
     }
     
     public void changeFavoriteSong(String newSong){
-    System.out.println("====");
+    System.out.println("==============");
     System.out.println("Previous Favorite Song: " + favoriteSong);
     favoriteSong = newSong;
     System.out.println("New Favorite Song: " + favoriteSong);
+    System.out.println("==============");
     System.out.println(" ");
     }
 }
