@@ -3,56 +3,43 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package javaapplication2;
-
 /**
  *
  * @author cyd jairo
  */
 public class singer_exercise2 {
-    // instance fields
-    private String name;
-    private int noOfPerformances;
-    private static int totalPerformances;
-    private double earnings;
-    private singer_exercise2 favoriteSong;
+    String name, favoriteSong;
+    int NoOfPerformances;
+    double earnings;
 
-    // constructor method
-    public singer_exercise2(String name, int noOfPerformances, 
-            double earnings, singer_exercise2 favoriteSong) {
-        this.name = name;
-        this.noOfPerformances = noOfPerformances;
-        this.earnings = earnings;
-        this.favoriteSong = favoriteSong;
-        totalPerformances += noOfPerformances;
+    public singer_exercise2 (String n, int num, double earn, String s){
+        name = n;
+        NoOfPerformances = num;
+        earnings = earn;
+        favoriteSong = s;
+    }
+    
+    public void performForTheAudience(int numOfPeople){
+    System.out.println("===");
+    System.out.println("Before:");
+    System.out.println("Performances: " + NoOfPerformances);
+    System.out.println("Earnings: " + earnings);
+    NoOfPerformances = NoOfPerformances + 1;
+    earnings =earnings + 100*numOfPeople;
+    System.out.println(" ");
+    System.out.println("After: ");
+    System.out.println("Performances: " + NoOfPerformances);
+    System.out.println("Earnings: " + earnings);
+    System.out.println("    ");
     }
 
-    public void performForTheAudience(int people) {
-        noOfPerformances++;
-        totalPerformances++;
-        earnings += people * 100;
-    }
-
-    public void performForAudience(singer_exercise2 singer, int people) {
-        noOfPerformances++;
-        singer.noOfPerformances++;
-        totalPerformances++;  // add by 1 or 2??
-        singer.earnings += people * 50;
-        earnings += people * 50;
-    }
-
-    public void changeFavSong(singer_exercise2 song) {
-        favoriteSong = song;
-    }
-
-    public double getEarnings() {
-        return earnings;
-    }
-
-    public singer_exercise2 getFavoriteSong() {
-        return favoriteSong;
-    }
-
-    public static int getTotalPerformances() {
-        return totalPerformances;
+    public void changeFavoriteSong(String newSong){
+    System.out.println("====");
+    System.out.println("==============");
+    System.out.println("Previous Favorite Song: " + favoriteSong);
+    favoriteSong = newSong;
+    System.out.println("New Favorite Song: " + favoriteSong);
+    System.out.println("==============");
+    System.out.println(" ");
     }
 }
