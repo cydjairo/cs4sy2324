@@ -15,15 +15,16 @@ public class JavaApplication2 {
      */
     public static void main(String[] args) {
         
-        song_exercise2 First = new song_exercise2(1, "WAR-R-R", "Love Part 1", "4 mins, 32 secs", "Colde");
-        song_exercise2 Second = new song_exercise2(2, "ONLY", "4 ONLY", "4 mins.", "LeeHi");
-        song_exercise2 Third = new song_exercise2 (3, "bad", "0.1 flaws and all.", "4 mins, 23 secs", "wave to earth");
+        song_exercise2 warRr = new song_exercise2("WAR-R-R", "Love Part 1", "Korean RNB" , 272);
+        song_exercise2 Bad = new song_exercise2 ("bad", "0.1 flaws and all.", "Korean RNB", 263);
         
-        singer_exercise2 Anne = new singer_exercise2("Anne Ambrocio", 10, 5000, "Paraluman");
+        singer_exercise2 Anne = new singer_exercise2("Anne", 10, 5000, warRr);
+        singer_exercise2 Phila = new singer_exercise2("Phila", 50, 10000, Bad);
         
-        First.displaySonging();
-        Second.displaySonging();
-        Third.displaySonging();
+        Anne.performForTheAudience(150);
+        Anne.changeFavoriteSong(Bad);
+        
+        Anne.performForTheAudience(Phila, 100);
          
         Anne.performForTheAudience(100);
         
