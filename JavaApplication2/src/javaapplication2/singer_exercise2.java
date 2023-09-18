@@ -1,45 +1,62 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+ 
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+*/
 package javaapplication2;
+
 /**
  *
- * @author cyd jairo
- */
+ 
+@author Christian Brandon*/
 public class singer_exercise2 {
-    String name, favoriteSong;
-    int NoOfPerformances;
-    double earnings;
+    // instance fields
+    private final String name;
+    private int noOfPerformances;
+    private static int totalPerformances;
+    private double earnings;
+    private song_exercise2 favoriteSong;
 
-    public singer_exercise2 (String n, int num, double earn, String s){
-        name = n;
-        NoOfPerformances = num;
-        earnings = earn;
-        favoriteSong = s;
+    // constructor method
+    public singer_exercise2(String name, int noOfPerformances, 
+            double earnings, song_exercise2 favoriteSong) {
+        this.name = name;
+        this.noOfPerformances = noOfPerformances;
+        this.earnings = earnings;
+        this.favoriteSong = favoriteSong;
+        totalPerformances += noOfPerformances;
     }
     
-    public void performForTheAudience(int numOfPeople){
-    System.out.println("===");
-    System.out.println("Before:");
-    System.out.println("Performances: " + NoOfPerformances);
-    System.out.println("Earnings: " + earnings);
-    NoOfPerformances = NoOfPerformances + 1;
-    earnings =earnings + 100*numOfPeople;
-    System.out.println(" ");
-    System.out.println("After: ");
-    System.out.println("Performances: " + NoOfPerformances);
-    System.out.println("Earnings: " + earnings);
-    System.out.println("    ");
+    public String getName(){
+        return name;
+    }
+    public void performForTheAudience(int people) {
+        noOfPerformances++;
+        totalPerformances++;
+        earnings += people * 100;
     }
 
-    public void changeFavoriteSong(String newSong){
-    System.out.println("====");
-    System.out.println("==============");
-    System.out.println("Previous Favorite Song: " + favoriteSong);
-    favoriteSong = newSong;
-    System.out.println("New Favorite Song: " + favoriteSong);
-    System.out.println("==============");
-    System.out.println(" ");
+    public void performForTheAudience(singer_exercise2 singer, int people) {
+        noOfPerformances++;
+        singer.noOfPerformances++;
+        totalPerformances++;  // add by 1 or 2??
+        singer.earnings += people * 50;
+        earnings += people * 50;
+    }
+
+    public void changeFavoriteSong(song_exercise2 song) {
+        favoriteSong = song;
+    }
+
+    public double getEarnings() {
+        return earnings;
+    }
+
+    public song_exercise2 getFavoriteSong() {
+        return favoriteSong;
+    }
+
+    public static int getTotalPerformances() {
+        return totalPerformances;
     }
 }
