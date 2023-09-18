@@ -9,22 +9,39 @@ package javaapplication2;
  * @author cyd jairo
  */
 public class song_exercise2 {
-    String name, album, length, performer;
-    int id;
+    private final String name, album;
+    private String kindofmusic;
+    private int length;
     
-    public song_exercise3(int t, String a, String r, String c, String y){
-    id = t;
-    name = a;
-    album = r;
-    length = c;
-    performer = y;
+    public song_exercise2(String name, String album, String kindofmusic, int length){
+    this.name = name;
+    this.album = album;
+    this.kindofmusic = kindofmusic;
+    this.length = length;
     } 
-    public void displaySonging(){
-    System.out.println("Song Number: " + id);
-    System.out.println("Name: " + name);
-    System.out.println("Album: " + album);
-    System.out.println("Length: " + length);
-    System.out.println("Performer: " + performer);
-    System.out.println(" ");
+    
+    public void displayKindOfMusic(String musicee){
+    this.kindofmusic = musicee;
     }
-}
+    
+    public void SongLength(int second){
+    length += second;
+    }
+    
+    public String getName(){
+    return name;
+    }
+    
+    public String getAlbum(){
+    return album;
+    }
+    
+    public String getKindOfMusic(){
+    return kindofmusic;
+    }
+    
+    public int getLength(){
+    return length;
+    }
+}   
+
