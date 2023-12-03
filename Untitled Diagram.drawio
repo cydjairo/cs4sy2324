@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-12-01T18:18:32.643Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="P-ZBEV1qd0jpxeORmlkI" version="22.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-03T08:45:37.019Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="AL0te-gtEU4R9y5tId4x" version="22.1.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="794" dy="446" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="197" dy="254" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="-zpeLmsUHGGH9OffOYsW-0" value="&amp;lt;&amp;lt;Monster&amp;gt;&amp;gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="330" y="220" width="230" height="600" as="geometry" />
+          <mxGeometry x="330" y="220" width="230" height="550" as="geometry" />
         </mxCell>
         <mxCell id="-zpeLmsUHGGH9OffOYsW-1" value="# name: String&lt;br&gt;# typeS: String&lt;br&gt;# weakAgainst: String&lt;br&gt;# strongAgainst: String&lt;br&gt;# maxHP: int&lt;br&gt;# HP: int&lt;br&gt;# Atk: int&lt;br&gt;# Def: int&lt;br&gt;# AtkBoost = int = 0&lt;br&gt;# DefBoost = int = 0&lt;br&gt;# XP = int = 0&lt;br&gt;# Lvl = int = 1&lt;br&gt;# guard = boolean = false&lt;br&gt;# charge = boolean = false&lt;br&gt;&lt;br&gt;# monsterList = ArrayList&amp;lt;Monster&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="-zpeLmsUHGGH9OffOYsW-0" vertex="1">
           <mxGeometry y="26" width="230" height="244" as="geometry" />
@@ -14,7 +14,7 @@
           <mxGeometry y="270" width="230" height="8" as="geometry" />
         </mxCell>
         <mxCell id="-zpeLmsUHGGH9OffOYsW-3" value="# getName: String&lt;br&gt;# getMaxHP: int&lt;br&gt;# getHP: int&lt;br&gt;# getAtk: int&lt;br&gt;# getDef: int&lt;br&gt;# getLvl: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="-zpeLmsUHGGH9OffOYsW-0" vertex="1">
-          <mxGeometry y="278" width="230" height="322" as="geometry" />
+          <mxGeometry y="278" width="230" height="272" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
